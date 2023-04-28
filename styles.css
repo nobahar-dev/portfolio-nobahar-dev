@@ -1,0 +1,755 @@
+/*Common styles*/
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('fonts/IRANYekanX-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "IRANYekanX Bold";
+    src: url("fonts/IRANYekanX-Bold.woff") format('woff');
+}
+
+:root {
+    --dark-color: #283550;
+    --green-color: #00A78E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    direction: rtl;
+}
+/*End of Common Styles*/
+
+/*Section 1 Home*/
+.section-1-home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.green-aside {
+    width: 50%;
+    height: 100%;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}
+
+.logo {
+    position: absolute;
+    top: 3rem;
+    left: 5%;
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.logo span {
+    color: white;
+}
+
+.aside-img {
+    width: 45rem;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    position: absolute;
+    top: 3rem;
+    right: 5%;
+}
+
+.navbar-link {
+    display: inline-block;
+    color: var(--dark-color);
+    margin: 0 3rem;
+    font-size: 1.6rem;
+    font-family: "IRANYekanX Bold", serif;
+    transition: color, transform .5s;
+}
+
+.navbar-link:hover {
+    transform: scale(1.5);
+    color: var(--green-color);
+}
+
+.home-content {
+    width: 70rem;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-hello {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 3rem;
+    color: var(--green-color);
+}
+
+.home-name {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin: 1rem 0;
+}
+
+.home-freelancer {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin: 1rem 0;
+}
+
+.home-intro {
+    font-family: IRANYekanX, serif;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin: 1rem 0;
+    text-align: justify;
+    line-height: 25pt;
+}
+
+.dl-resume {
+    width: 15rem;
+    height: 6rem;
+    background-color: var(--green-color);
+    border: none;
+    color: white;
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    align-self: end;
+    margin: 2rem 0;
+    box-shadow: .1rem .1rem rgba(0, 0, 0, .2);
+}
+/*End of Section 1 Home*/
+
+/*Section 2 About Me*/
+.section-2-about-me {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-2-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-title {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 3rem;
+    color: var(--green-color);
+}
+
+.why-me-title {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin-top: 1rem;
+}
+
+.title-separator {
+    width: 20rem;
+    height: .5rem;
+    background-color: var(--green-color);
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+
+.section-2-about {
+    width: 70rem;
+    font-family: IRANYekanX, serif;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    line-height: 25pt;
+    margin-top: 5rem;
+    text-align: justify;
+}
+.me-img {
+    width: 45rem;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.progress-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem .6rem;
+}
+
+.progress-title p {
+    font-family: IRANYekanX, serif;
+    font-size: 1.8rem;
+}
+
+.progress {
+    width: 100%;
+    height: 1.4rem;
+    background-color: #CCC;
+    border-radius: .5rem;
+}
+
+.progress-percent {
+    width: 0;
+    height: 100%;
+    background-color: var(--green-color);
+    border-radius: .5rem;
+    transition: width .5s .5s ease-in-out;
+}
+/*End of Section 2 About Me*/
+
+/*Section 3 Services*/
+.section-3-services {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.section-3-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-title {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 3rem;
+    color: var(--green-color);
+}
+
+.section-3-subtitle {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin-top: 1rem;
+}
+
+.services-wrapper {
+    width: 80%;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 35rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    margin: 2rem 3rem;
+    transition: all .3s;
+}
+
+.service:hover {
+    background-color: var(--green-color);
+    cursor: pointer;
+}
+
+.service-icon-wrapper {
+    width: 8.5rem;
+    height: 6rem;
+    background-color: var(--green-color);
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.service:hover .service-icon-wrapper {
+    background-color: white;
+}
+
+.service-icon-wrapper i {
+    font-size: 4rem;
+    color: white;
+}
+
+.service:hover .service-icon-wrapper i {
+    color: var(--green-color);
+}
+
+.service-title {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+.service-content {
+    font-family: IRANYekanX, serif;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+.service:hover .service-title,
+.service:hover .service-content{
+    color: white;
+}
+/*End of Section 3 Services*/
+
+/*Section 4 experience*/
+.section-4-experience {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.section-4-title-wrapper {
+    flex-direction: column;
+}
+
+.section-4-title {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 3rem;
+    color: var(--green-color);
+}
+
+.section-4-subtitle {
+    font-family: "IRANYekanX Bold", serif;
+    font-size: 4rem;
+    color: var(--dark-color);
+    margin-top: 1rem;
+}
+
+.timeline {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.timeline-component {
+    margin: 0 25px 25px 25px;
+    transition: all .5s;
+}
+
+.timeline-component-bottom {
+    margin-bottom: 0;
+}
+
+.timeline-component-left {
+    text-align: left!important;
+}
+
+.timeline-component-desc {
+    padding: 1rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+.timeline-component-desc:hover {
+    background: var(--green-color);
+    color: white;
+}
+.timeline-component-desc:hover p {
+    color: white;
+}
+
+.timeline-middle {
+    position: relative;
+    background: var(--green-color);
+}
+
+.timeline-middle-point {
+    width: 15px;
+    height: 15px;
+    background: var(--green-color);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.timeline-middle-point-bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.experience-description {
+    font-family: 'IRANYekanX', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1rem;
+    color: var(--dark-color);
+}
+
+.experience-title {
+    font-family: 'IRANYekanX Bold', serif;
+    font-size: 2rem;
+    text-align: right;
+    color: var(--dark-color);
+}
+
+.experience-company {
+    font-family: 'IRANYekanX', serif;
+    font-size: 1.6rem;
+    text-align: right;
+    color: var(--green-color);
+    margin-top: .4rem;
+}
+
+.experience-date {
+    font-family: 'IRANYekanX', serif;
+    font-size: 1.4rem;
+    text-align: right;
+    color: var(--dark-color);
+    margin-top: .4rem;
+}
+/*End of Section 4 experience*/
+
+/*Section 5 Contact Me*/
+.section-5-contact-me {
+    width: 100%;
+    margin: 8rem 0;
+}
+
+.contact-box {
+    width: 75vw;
+    height: 25rem;
+    background: var(--green-color);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact-head {
+    font-family: 'IRANYekanX Bold', serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-content {
+    font-family: 'IRANYekanX', serif;
+    font-size: 2rem;
+    color: white;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.contact-phone {
+    background-color: white;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    color: var(--green-color);
+    font-family: 'IRANYekanX', serif;
+    font-size: 2.2rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+/*End of Section 5 Contact Me*/
+
+/*Footer*/
+footer {
+    width: 100%;
+    background-color: #F8F8F8;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.footer-logo {
+    font-family: 'IRANYekanX Bold', serif;
+    font-size: 3rem;
+    direction: ltr;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.footer-logo span {
+    color: var(--green-color);
+}
+
+.social > a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    font-size: 1.8rem;
+    background-color: #EBEBEE;
+    color: var(--dark-color);
+    margin: 2rem 1rem;
+    transition: color .3s;
+}
+
+.social > a:hover {
+    color: var(--green-color);
+}
+
+.my-email {
+    font-family: 'IRANYekanX Bold', serif;
+    font-size: 3rem;
+    color: var(--dark-color);
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 2rem 2rem;
+    font-family: 'IRANYekanX Bold', serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.footer-nav li:hover {
+    transform: scale(1.5);
+}
+
+.footer-nav a {
+    color: var(--dark-color);
+    transition: color .3s;
+}
+
+.footer-nav a:hover {
+    color: var(--green-color);
+}
+/*End of Footer*/
+
+/*Responsive*/
+@media (max-width: 1500px) {
+    .section-2-content {
+        width: 100%;
+        margin: 0 5rem;
+    }
+
+    .services-wrapper {
+        width: 100%;
+    }
+
+    .section-3-services {
+        max-height: max-content;
+        margin: 10rem 0;
+    }
+
+    .section-4-experience {
+        max-height: max-content;
+        margin-top: 20rem;
+    }
+}
+
+@media(max-width: 1400px) {
+    .home-content {
+        width: 60rem;
+    }
+
+    .aside-img {
+        width: 35rem;
+    }
+
+    .me-img {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navbar {
+        right: 2%;
+    }
+
+    .me-img {
+        width: 33rem;
+        margin-top: 16rem;
+    }
+
+    .aside-img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-content {
+        width: 50%;
+        margin: 0 2%;
+    }
+
+    .navbar {
+        width: max-content;
+        right: 2%;
+    }
+
+    .navbar-link {
+        margin: 0 2rem;
+    }
+
+    .section-2-about {
+        width: 60rem;
+    }
+
+    .contact-head {
+        font-size: 2.5rem;
+    }
+
+    .contact-content {
+        font-size: 1.5rem;
+    }
+
+    .contact-phone {
+        font-size: 2rem;
+    }
+
+    .aside-img {
+        left: 10%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .aside-img {
+        width: 30rem;
+    }
+
+    .section-2-about {
+        width: 40rem;
+    }
+
+    .me-img {
+        width: 30rem;
+    }
+
+    .contact-head {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-link {
+        margin: 0 1rem;
+    }
+
+    .contact-box {
+        width: 80vw;
+    }
+
+    .section-2-about-me {
+        height: max-content;
+        margin: 10rem 0 ;
+    }
+
+    .section-2-about {
+        width: 100%;
+    }
+
+    .section-2-content {
+        margin: 0 5rem;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .me-img {
+        width: 35rem;
+        margin-top: 2rem;
+    }
+
+    .section-3-services {
+        height: max-content;
+        margin: 10rem 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-1-home {
+        height: 70vh;
+    }
+
+    .green-aside {
+        display: none;
+        scale: none;
+    }
+
+    .home-content {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .section-2-about-me {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 55%;
+    }
+
+    .timeline-component {
+        margin: 0 10px 15px 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 40%;
+    }
+}
+/*End of Responsive*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
